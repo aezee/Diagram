@@ -1,14 +1,4 @@
-# Konversi file DOT ke format XML (.drawio.xml) untuk digunakan langsung di draw.io
-
-from xml.etree.ElementTree import Element, SubElement, tostring, ElementTree
-import xml.dom.minidom as minidom
-
-# Buat root elemen untuk file .drawio.xml
-mxfile = Element('mxfile', host="app.diagrams.net")
-diagram = SubElement(mxfile, 'diagram', name="Flowchart Kerja Praktik")
-
-# Konten XML dummy (draw.io XML lengkap biasanya hasil ekspor GUI, di sini disederhanakan)
-content = """<mxGraphModel>
+"""<mxGraphModel>
   <root>
     <mxCell id="0"/>
     <mxCell id="1" parent="0"/>
@@ -47,12 +37,3 @@ content = """<mxGraphModel>
     <mxCell id="16" style="edgeStyle=orthogonalEdgeStyle" edge="1" source="8" target="9" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
   </root>
 </mxGraphModel>"""
-
-# Tambahkan konten XML ke elemen diagram
-diagram.text = content
-
-# Simpan sebagai file .drawio.xml
-xml_path = "/mnt/data/flowchart_kerja_praktik.drawio.xml"
-ElementTree(mxfile).write(xml_path, encoding="utf-8", xml_declaration=True)
-
-xml_path
