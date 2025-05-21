@@ -1,39 +1,27 @@
-"""<mxGraphModel>
-  <root>
-    <mxCell id="0"/>
-    <mxCell id="1" parent="0"/>
-    <!-- Nodes -->
-    <mxCell id="2" value="Mulai Kerja Praktik" style="ellipse" vertex="1" parent="1">
-      <mxGeometry x="100" y="40" width="140" height="60" as="geometry"/>
-    </mxCell>
-    <mxCell id="3" value="Pengumpulan Data Umum" style="rectangle" vertex="1" parent="1">
-      <mxGeometry x="100" y="120" width="180" height="60" as="geometry"/>
-    </mxCell>
-    <mxCell id="4" value="Studi Gambar Desain Awal" style="rectangle" vertex="1" parent="1">
-      <mxGeometry x="100" y="200" width="200" height="60" as="geometry"/>
-    </mxCell>
-    <mxCell id="5" value="Koordinasi Antardisiplin" style="rectangle" vertex="1" parent="1">
-      <mxGeometry x="100" y="280" width="200" height="60" as="geometry"/>
-    </mxCell>
-    <mxCell id="6" value="Penyusunan Shop Drawing" style="rectangle" vertex="1" parent="1">
-      <mxGeometry x="100" y="360" width="200" height="60" as="geometry"/>
-    </mxCell>
-    <mxCell id="7" value="Approval?" style="rhombus" vertex="1" parent="1">
-      <mxGeometry x="100" y="440" width="140" height="80" as="geometry"/>
-    </mxCell>
-    <mxCell id="8" value="Distribusi ke Lapangan" style="rectangle" vertex="1" parent="1">
-      <mxGeometry x="100" y="540" width="180" height="60" as="geometry"/>
-    </mxCell>
-    <mxCell id="9" value="Selesai" style="ellipse" vertex="1" parent="1">
-      <mxGeometry x="100" y="620" width="120" height="60" as="geometry"/>
-    </mxCell>
-    <!-- Connections -->
-    <mxCell id="10" style="edgeStyle=orthogonalEdgeStyle" edge="1" source="2" target="3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
-    <mxCell id="11" style="edgeStyle=orthogonalEdgeStyle" edge="1" source="3" target="4" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
-    <mxCell id="12" style="edgeStyle=orthogonalEdgeStyle" edge="1" source="4" target="5" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
-    <mxCell id="13" style="edgeStyle=orthogonalEdgeStyle" edge="1" source="5" target="6" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
-    <mxCell id="14" style="edgeStyle=orthogonalEdgeStyle" edge="1" source="6" target="7" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
-    <mxCell id="15" style="edgeStyle=orthogonalEdgeStyle" edge="1" source="7" target="8" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
-    <mxCell id="16" style="edgeStyle=orthogonalEdgeStyle" edge="1" source="8" target="9" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
-  </root>
-</mxGraphModel>"""
+<mxfile host="app.diagrams.net">
+<diagram name="Flowchart Lengkap Kerja Praktik">
+<mxGraphModel dx="1520" dy="833" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169">
+<root>
+<mxCell id="0"/> <mxCell id="1" parent="0"/>
+<!-- Swimlanes -->
+<mxCell id="lane1" value="Mahasiswa / Drafter" style="swimlane" vertex="1" parent="1">
+<mxGeometry x="0" y="0" width="400" height="1000" as="geometry"/>
+</mxCell> <mxCell id="lane2" value="Konsultan / Pengawas" style="swimlane" vertex="1" parent="1">
+<mxGeometry x="400" y="0" width="400" height="1000" as="geometry"/>
+</mxCell>
+<!-- Proses Mahasiswa -->
+<mxCell id="2" value="Mulai Kerja Praktik" style="ellipse;fillColor=#d5e8d4" vertex="1" parent="lane1">
+<mxGeometry x="100" y="40" width="140" height="60" as="geometry"/>
+</mxCell>
+<mxCell id="3" value="Pengumpulan Data Proyek & Struktur Organisasi" style="rounded=1;fillColor=#dae8fc" vertex="1" parent="lane1">
+<mxGeometry x="80" y="120" width="180" height="60" as="geometry"/>
+</mxCell>
+<mxCell id="4" value="Studi Gambar Desain Awal" style="rounded=1;fillColor=#dae8fc" vertex="1" parent="lane1">
+<mxGeometry x="80" y="200" width="180" height="60" as="geometry"/>
+</mxCell>
+<mxCell id="5" value="Koordinasi Antardisiplin (Struktur, Arsitektur, MEP)" style="rounded=1;fillColor=#fff2cc" vertex="1" parent="lane1">
+<mxGeometry x="80" y="280" width="200" height="60" as="geometry"/>
+</mxCell>
+<mxCell id="6" value="Penyusunan Shop Drawing Penulangan" style="rounded=1;fillColor=#f8cecc" vertex="1" parent="lane1">
+<mxGeometry x="80" y="360" width="200" height="60" as="geometry"/>
+</mxCell>
